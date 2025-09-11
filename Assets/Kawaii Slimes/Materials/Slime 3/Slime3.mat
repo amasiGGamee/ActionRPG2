@@ -16,7 +16,11 @@ MonoBehaviour:
 --- !u!21 &2100000
 Material:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   serializedVersion: 8
+=======
+  serializedVersion: 6
+>>>>>>> Stashed changes
 =======
   serializedVersion: 6
 >>>>>>> Stashed changes
@@ -26,11 +30,16 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Slime3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Shader: {fileID: 4800000, guid: ff1934f0978715c4eb6ad5202b1f6f33, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
+=======
+  m_Shader: {fileID: 4800000, guid: abaf2020b803b6847b5c081ed22c05c5, type: 3}
+  m_ShaderKeywords: 
+>>>>>>> Stashed changes
 =======
   m_Shader: {fileID: 4800000, guid: abaf2020b803b6847b5c081ed22c05c5, type: 3}
   m_ShaderKeywords: 
@@ -42,7 +51,10 @@ Material:
   stringTagMap: {}
   disabledShaderPasses: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LockedProperties: 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   m_SavedProperties:
@@ -50,7 +62,11 @@ Material:
     m_TexEnvs:
     - _BaseMap:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         m_Texture: {fileID: 2800000, guid: 3bb9fa0d8d0293e4cadb088c2ca595fa, type: 3}
+=======
+        m_Texture: {fileID: 0}
+>>>>>>> Stashed changes
 =======
         m_Texture: {fileID: 0}
 >>>>>>> Stashed changes
@@ -93,10 +109,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - _OutlineZOffsetMaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     - _ParallaxMap:
@@ -124,6 +143,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_Ints: []
     m_Floats:
     - _AdditionalLightIgnoreCelShade: 0.9
@@ -133,10 +153,15 @@ Material:
     - _CelShadeMidPoint: -0.5
     - _CelShadeSoftness: 0.05
 =======
+=======
+>>>>>>> Stashed changes
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -145,9 +170,13 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - _DirectLightMultiplier: 1
     - _DstBlend: 0
     - _EmissionMulByBaseColor: 0
+=======
+    - _DstBlend: 0
+>>>>>>> Stashed changes
 =======
     - _DstBlend: 0
 >>>>>>> Stashed changes
@@ -155,6 +184,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - _IndirectLightMultiplier: 1
     - _IsFace: 0
@@ -172,10 +202,15 @@ Material:
     - _ReceiveShadowMappingAmount: 0.65
     - _ReceiveShadowMappingPosOffset: 0
 =======
+=======
+>>>>>>> Stashed changes
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
@@ -183,6 +218,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - _UseAlphaClipping: 0
     - _UseEmission: 0
@@ -200,6 +236,8 @@ Material:
     - _ShadowColor: {r: 0.8, g: 0.8, b: 1, a: 1}
     - _ShadowMapColor: {r: 1, g: 0.825, b: 0.78, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -207,6 +245,9 @@ Material:
     - _Color: {r: 0.9156501, g: 1, b: 0.8537736, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadowColor: {r: 0.8, g: 0.8, b: 1, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
