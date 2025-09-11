@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,6 +22,11 @@ public class Gameplay : MonoBehaviour
     Image hpBar;
     Character player;
 
+    internal void TakeDamage(int v)
+    {
+        throw new NotImplementedException();
+    }
+
     void Start()
     {
         // ใช้ field player โดยตรง ไม่สร้างตัวแปรใหม่
@@ -38,4 +44,3 @@ public class Gameplay : MonoBehaviour
         hpBar.fillAmount = (float)player.hp / 100f;
     }
 }
- // 67114640759 อริสา  บัณฑิตย์ 
