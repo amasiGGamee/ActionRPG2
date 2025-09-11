@@ -5,6 +5,10 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Character
 {
+    //My name is Brian
+    //I am 24 year old
+    //I am from korean
+    //67114640470 Phattarapon Phaowarit
     public string name;  // Attribute
     public int hp;
 
