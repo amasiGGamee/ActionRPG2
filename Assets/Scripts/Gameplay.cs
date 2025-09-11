@@ -38,3 +38,4 @@ public class Gameplay : MonoBehaviour
         hpBar.fillAmount = (float)player.hp / 100f;
     }
 }
+ // 67114640759 อริสา  บัณฑิตย์ 
