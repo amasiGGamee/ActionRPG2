@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +25,11 @@ public class Gameplay : MonoBehaviour
     TextMeshProUGUI playerName;
     Image hpBar;
     Character player;
+
+    internal void TakeDamage(int v)
+    {
+        throw new NotImplementedException();
+    }
 
     void Start()
     {
