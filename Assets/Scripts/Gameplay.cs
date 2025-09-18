@@ -34,7 +34,7 @@ public class Gameplay : MonoBehaviour
     void Start()
     {
         // ใช้ field player โดยตรง ไม่สร้างตัวแปรใหม่
-        player = new Character("PicoChan", 80);
+        player = new Character("PicoChan", 100);
 
         playerName = GameObject.Find("PlayerName").GetComponent<TextMeshProUGUI>();
         hpBar = GameObject.Find("HP").GetComponent<Image>();
