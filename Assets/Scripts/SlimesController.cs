@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class SlimesController : MonoBehaviour
 {
+    public Image hpbar;
+    public float Hp = 100f;
+
     public Transform target;
     public float moveSpeed = 2f;
     public float attackDistance = 2f; // ระยะโจมตี
@@ -12,6 +16,7 @@ public class SlimesController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        UpdateUI(); // เรียกครั้งแรกให้ hpbar อัปเดตตั้งแต่เริ่ม
     }
 
     void Update()
@@ -22,12 +27,10 @@ public class SlimesController : MonoBehaviour
 
         if (distance > detectDistance)
         {
-            // ไกลเกินไป → Idle
             anim.SetBool("isAttacking", false);
         }
         else if (distance > attackDistance)
         {
-            // เดินเข้าหา Player
             Vector3 direction = (target.position - transform.position);
             direction.y = 0;
             direction = direction.normalized;
@@ -39,8 +42,43 @@ public class SlimesController : MonoBehaviour
         }
         else
         {
-            // อยู่ในระยะโจมตี → โจมตีต่อเนื่อง
             anim.SetBool("isAttacking", true);
         }
+
+        // ✅ ให้ UI อัปเดตทุกเฟรม
+        UpdateUI();
     }
-}
+
+    void UpdateUI()
+    {
+        hpbar.fillAmount = Mathf.Clamp01(Hp / 100f);
+    }
+
+    // 🗡 ถ้าถูก Sword ชน ให้ลด HP
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Sword") && CompareTag("Enemy"))
+        {
+            TakeDamage(20f); // ลด HP ลง 20 (กำหนดได้เอง)
+        }
+    }
+
+    void TakeDamage(float damage)
+    {
+        Hp -= damage;
+        Hp = Mathf.Clamp(Hp, 0, 100); // กันไม่ให้ติดลบ
+        UpdateUI();
+
+        if (Hp <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        // ทำอนิเมชันตายหรือ Destroy ศัตรู
+        Debug.Log("Enemy Died!");
+        Destroy(gameObject);
+    }
+}   //67114640759
